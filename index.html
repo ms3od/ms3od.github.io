@@ -3,97 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Electrical Engineer</title>
+  <title>John Doe - Electrical Engineer | Digitalization of Industrial Processes</title>
+  <meta name="description" content="Portfolio of John Doe, an electrical engineer specializing in the digitalization of industrial processes.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav>
-    <div class="container">
-      <a href="#home" class="logo">Your Name</a>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+  <header>
+    <h1>John Doe</h1>
+    <p>Electrical Engineer | Digitalization of Industrial Processes</p>
+  </header>
 
-  <!-- Home Section -->
-  <section id="home" class="home-section">
-    <div class="container">
-      <h1 class="fade-in">Hello, I'm <span>Your Name</span></h1>
-      <p class="fade-in">Electrical Engineer | Innovator | Problem Solver</p>
-      <a href="#projects" class="btn fade-in">View My Work</a>
-    </div>
-  </section>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am an electrical engineer with over 5 years of experience in digitalizing industrial processes. My expertise lies in integrating IoT solutions, automating workflows, and optimizing systems for efficiency and scalability.</p>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="about-section">
-    <div class="container">
-      <h2 class="slide-in">About Me</h2>
-      <p class="slide-in">
-        I am a passionate electrical engineer with expertise in [your specialties, e.g., circuit design, power systems, embedded systems, etc.]. 
-        I enjoy solving complex problems and creating innovative solutions that make a difference.
-      </p>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects-section">
-    <div class="container">
-      <h2 class="slide-in">Projects</h2>
-      <div class="project-grid">
-        <div class="project-card scale-in">
-          <h3>Project 1</h3>
-          <p>Description of your project. Highlight the technologies used and the impact of the project.</p>
-        </div>
-        <div class="project-card scale-in">
-          <h3>Project 2</h3>
-          <p>Description of your project. Highlight the technologies used and the impact of the project.</p>
-        </div>
-        <!-- Add more project cards as needed -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <img src="project1.webp" alt="IoT-based Monitoring System" loading="lazy" width="300" height="200">
+        <h3>IoT-based Monitoring System</h3>
+        <p>Developed an IoT solution to monitor real-time performance of industrial machines, reducing downtime by 20%.</p>
       </div>
-    </div>
-  </section>
+      <div class="project">
+        <img src="project2.webp" alt="Automated Workflow System" loading="lazy" width="300" height="200">
+        <h3>Automated Workflow System</h3>
+        <p>Implemented a SCADA-based automation system for a manufacturing plant, improving process efficiency by 15%.</p>
+      </div>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="skills-section">
-    <div class="container">
-      <h2 class="slide-in">Skills</h2>
+    <section id="skills">
+      <h2>Skills</h2>
       <ul>
-        <li class="fade-in">Circuit Design</li>
-        <li class="fade-in">Embedded Systems</li>
-        <li class="fade-in">Power Systems</li>
-        <li class="fade-in">PCB Design</li>
-        <li class="fade-in">Programming (C, Python, MATLAB)</li>
-        <!-- Add more skills as needed -->
+        <li>PLC Programming (Siemens, Allen-Bradley)</li>
+        <li>SCADA Systems</li>
+        <li>IoT Integration (MQTT, OPC UA)</li>
+        <li>Data Analytics (Python, MATLAB)</li>
+        <li>Industrial Networking (Ethernet/IP, Profibus)</li>
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section">
-    <div class="container">
-      <h2 class="slide-in">Contact Me</h2>
-      <p class="slide-in">If you'd like to collaborate or have any questions, feel free to reach out!</p>
-      <form action="#" method="post">
-        <input type="text" name="name" placeholder="Your Name" required class="fade-in">
-        <input type="email" name="email" placeholder="Your Email" required class="fade-in">
-        <textarea name="message" placeholder="Your Message" required class="fade-in"></textarea>
-        <button type="submit" class="btn fade-in">Send Message</button>
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="job">
+        <h3>Senior Electrical Engineer</h3>
+        <p>ABC Industries | 2020 - Present</p>
+        <ul>
+          <li>Led digital transformation projects, integrating IoT and automation solutions.</li>
+          <li>Optimized energy consumption through smart monitoring systems.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Electrical Engineer</h3>
+        <p>XYZ Corp | 2018 - 2020</p>
+        <ul>
+          <li>Designed and implemented PLC-based control systems for production lines.</li>
+          <li>Conducted data analysis to improve system reliability.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>M.Sc. in Electrical Engineering, University of Technology, 2018</li>
+        <li>B.Sc. in Electrical Engineering, University of Technology, 2016</li>
+        <li>Certified IoT Professional, IoT Council, 2019</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
       </form>
-    </div>
-  </section>
+      <p>Or connect with me on <a href="https://linkedin.com/in/johndoe" target="_blank">LinkedIn</a>.</p>
+    </section>
+  </main>
 
-  <!-- Footer -->
   <footer>
-    <div class="container">
-      <p>&copy; 2023 Your Name. All rights reserved.</p>
-    </div>
+    <p>&copy; 2023 John Doe. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
