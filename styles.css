@@ -1,0 +1,278 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #007BFF;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  .slide-in {
+    opacity: 0;
+    animation: slideIn 1s ease forwards;
+  }
+  
+  .scale-in {
+    opacity: 0;
+    animation: scaleIn 0.8s ease forwards;
+  }
+  
+  /* Home Section */
+  .home-section {
+    background: #f4f4f4;
+    padding: 5rem 0;
+    text-align: center;
+  }
+  
+  .home-section h1 {
+    font-size: 3rem;
+    animation-delay: 0.2s;
+  }
+  
+  .home-section span {
+    color: #007BFF;
+  }
+  
+  .home-section p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    animation-delay: 0.4s;
+  }
+  
+  .btn {
+    background: #007BFF;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    animation-delay: 0.6s;
+  }
+  
+  .btn:hover {
+    background: #0056b3;
+  }
+  
+  /* About Section */
+  .about-section {
+    padding: 3rem 0;
+  }
+  
+  .about-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    animation-delay: 0.2s;
+  }
+  
+  .about-section p {
+    animation-delay: 0.4s;
+  }
+  
+  /* Projects Section */
+  .projects-section {
+    background: #f4f4f4;
+    padding: 3rem 0;
+  }
+  
+  .projects-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    animation-delay: 0.2s;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+  
+  .project-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation-delay: 0.4s;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Skills Section */
+  .skills-section {
+    padding: 3rem 0;
+  }
+  
+  .skills-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    animation-delay: 0.2s;
+  }
+  
+  .skills-section ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .skills-section ul li {
+    background: #007BFF;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    animation-delay: 0.4s;
+  }
+  
+  .skills-section ul li:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    padding: 3rem 0;
+  }
+  
+  .contact-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    animation-delay: 0.2s;
+  }
+  
+  .contact-section p {
+    animation-delay: 0.4s;
+  }
+  
+  .contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-section input,
+  .contact-section textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    animation-delay: 0.6s;
+  }
+  
+  .contact-section input:focus,
+  .contact-section textarea:focus {
+    border-color: #007BFF;
+  }
+  
+  .contact-section button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    animation-delay: 0.8s;
+  }
+  
+  .contact-section button:hover {
+    background: #0056b3;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
